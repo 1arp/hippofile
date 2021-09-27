@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  hippofile:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13
+    container_name: db
+    ports:
+      - '5433:5432'
+    environment:
+      POSTGRES_USER: prisma
+      POSTGRES_PASSWORD: prisma
+      POSTGRES_DB: tests
