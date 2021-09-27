@@ -10,7 +10,7 @@ docker-compose up
 
 ```bash
 Product{
-	name        String
+  name        String
   sku         String @id
   description String
 }
