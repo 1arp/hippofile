@@ -49,6 +49,8 @@ none
 
 - Product Table
 
+  count: 466693
+
 ```bash
 tests=# select * from "Product";
 -[ RECORD 1 ]------------------------------------------------------------------------
@@ -144,6 +146,8 @@ description | Camera say player across politics issue attack. Opportunity factor
 ```
 
 - ProductCount Table
+
+  count: 212751
 
 ```bash
 tests=# select * from "ProductCount";
