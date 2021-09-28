@@ -18,7 +18,7 @@ class DataOperations {
     let batch: Array<Prisma.ProductCreateInput> = []
     let batches: Array<Prisma.ProductCreateInput[]> = []
     Object.values(this.data).map((product) => {
-      if (batch.length < 30) {
+      if (batch.length < 100) {
         batch.push(product);
       } else {
         batches.push(batch)
@@ -34,6 +34,8 @@ class DataOperations {
 
 
     await this.queue.onIdle()
+    this.data = [] as any;
+    console.log("populating aggregate table")
     DBOperations.populateAggregateTable()
   }
 

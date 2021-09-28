@@ -26,7 +26,8 @@ export class FileOperations {
         flag = true;
       })
       .on('end', function () {
-        console.log("end");
+        console.log("file read");
+        console.log("ingesting data");
         DataOp.ingestData();
       })
   }
