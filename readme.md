@@ -1,4 +1,3 @@
-# Postman Assignment
 
 ## Set up
 
