@@ -29,7 +29,7 @@ ProductCount {
 ## Interact with DB
 
 ```bash
-docker exec -it <docker-db-id> psql -U tests
+docker exec -it <docker-db-id> psql -U prisma -d tests
 ```
 
 ## Completed Points To Achieve
